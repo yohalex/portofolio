@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icon/geek.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./homepage.css" />
+    <link rel="stylesheet" href="projet.css" />
+    <link rel="stylesheet" href="contact.css" />
+
+    <title>Alex Yoh | HomePage</title>
+  </head>
+  <body>
+    <header>
+      <div class="btn-menu hamburger-style">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="ruban">
+        <p>Alex Stephane Yoh</p>
+      </div>
+      <main id="menu">
+        <h2>Accueil</h2>
+        <h2>Projets</h2>
+        <h2 class="display-contact">Contact</h2>
+        <footer>
+          💪ALEX 💻YOH
+          <span style="transform: rotateY(190deg); display: inline-block">
+            💪</span
+          >
+        </footer>
+      </main>
+    </header>
+    <main class="homepage">
+      <section class="follow">
+        <span style="font-size: 0.7rem; line-height: 1.8em">Follow me</span>
+        <div class="links-social">
+          <a href="" target="_blank" class="facebook">
+            <img src="./icon/facebook.svg" alt="" class="icon"
+          /></a>
+          <a href="" target="_blank" class="github"
+            ><img
+              src="./icon/github-logo-silhouette-in-a-square.svg"
+              alt=""
+              class="icon"
+          /></a>
+          <a href="" target="_blank" class="linkedin"
+            ><img src="./icon/linkedin.svg" alt="" class="icon"
+          /></a>
+          <a href="#" class="twitter"
+            ><img src="./icon/twitter.svg" alt="" class="icon"
+          /></a>
+        </div>
+      </section>
+      <section class="presentation">
+        <div class="text-presentation">
+          <h3></h3>
+          <p>
+            <span class="my-description"></span
+            ><span style="font-size: 1.5rem" class="blink">_</span>
+          </p>
+          <button>Cliquer pour voir mon CV</button>
+        </div>
+      </section>
+    </main>
+    <main class="project">
+      <h3>Mes projets Web</h3>
+      <p>
+        <span class="show-all select-projet">Tous les projets</span>
+        <span class="static-site select-projet">Site Statique</span>
+        <span class="apk-web select-projet">Application Web</span>
+        <span class="games select-projet">Jeu</span>
+      </p>
+      <section class="container-project">
+        <div class="item-project jeu">
+          <a href="https://yohalex.github.io/dice/" target="_blank">Dice</a>
+          <div>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+          </div>
+        </div>
+        <div class="item-project jeu">
+          <a href="https://yohalex.github.io/memory/" target="_blank">Memory</a>
+          <div>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+          </div>
+        </div>
+        <div class="item-project jeu">
+          <a href="https://yohalex.github.io/morpion/" target="_blank" link
+            >Morpion</a
+          >
+          <div>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+          </div>
+        </div>
+        <div class="item-project jeu">
+          <a href="https://yohalex.github.io/nombremystere/" target="_blank"
+            >Mystère</a
+          >
+          <div>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <main class="contact">
+      <h3>Contact</h3>
+      <p>
+        Si vous voulez entrer en contact , me parler d'un projet de
+        collaboration ou simplement dire boujour , n'hésitez pas à remplir le
+        formulaire ci-dessous ou à m'envoyez un e-mail à
+        <a href="mailto:Yohalex@protonmail.com">
+          <strong>Yohalex@protonmail.com</strong></a
+        >
+      </p>
+      <form action="" method="POST">
+        <p>
+          <input
+            type="text"
+            name="full-name"
+            id="full-name"
+            placeholder="👨Full-Name"
+            required
+            class="saisi"
+          />
+          <label for="">👨Full-Name</label>
+        </p>
+        <p>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="📧Email"
+            required
+            class="saisi"
+          />
+          <label for="">📧Email</label>
+        </p>
+        <p>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            required
+            class="saisi"
+          ></textarea>
+        </p>
+        <button>Envoyer</button>
+      </form>
+    </main>
+
+    <script src="./script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_LPfpsTmpQshGATxgS0YPY");
+      })();
+    </script>
+  </body>
+</html>
